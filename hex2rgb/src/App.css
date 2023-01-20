@@ -1,0 +1,46 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+label {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.form-input,
+.form-input-block {
+  margin-bottom: 5%;
+  padding: 3%;
+  text-align: center;
+  border: solid 1px gray;
+}
+
+.form-input-block:focus {
+  outline: none;
+}
+
+.form-input:focus {
+  border: none;
+  outline: solid 2px #87ceeb;
+}
