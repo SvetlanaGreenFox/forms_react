@@ -20,13 +20,13 @@ function Result(props) {
     return result;
   };
 
-  const checkLenght = (color) => {
+  const checkLength = (color) => {
     if (color.length < 7) return null;
     document.body.style.backgroundColor = "#FF0000";
     return "Ошибка!";
   };
 
-  const result = color.length === 7 ? convertColor(color) : checkLenght(color);
+  const result = color.length === 7 ? convertColor(color) : checkLength(color);
 
   document.body.style.backgroundColor =
     result === "Ошибка!" ? "#FF0000" : result;
